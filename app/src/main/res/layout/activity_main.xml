@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tableRow">
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#009688"
+            android:text="CHỌN BÀI HÁT" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#E91E63"
+            android:text="PLAY" />
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#F44336"
+            android:text="PAUSE" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        android:text="NGHE NHAC"
+        android:textColor="#F44336"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/NumberSong"
+        android:text="Bài 1"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintVertical_bias="0.279"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"/>
+
+    <TextView
+        android:layout_height="61dp"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/Song"
+        android:text="Cậu Cả Remix"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.287"
+        app:layout_constraintTop_toBottomOf="@+id/NumberSong"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"/>
+
+    <TextView
+        android:layout_height="30dp"
+        android:layout_width="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/timeSong"
+        android:text="4min ,31 sec"
+        android:textSize="20dp"
+        android:gravity="right"
+        android:textColor="@color/black"
+        app:layout_constraintVertical_bias="0.887"
+        app:layout_constraintTop_toBottomOf="@+id/Song"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
